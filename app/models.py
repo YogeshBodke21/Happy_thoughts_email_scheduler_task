@@ -14,6 +14,7 @@ class ScheduleEmail(models.Model):
     sent_to = models.EmailField()
     sent_at = models.DateTimeField()
     status = models.CharField(choices=status_choices, default='pending')
+    task_id = models.CharField(max_length=255, null=True, blank=True)
 
     def __str__(self):
         return f"{self.subject} --> {self.sent_to}"
