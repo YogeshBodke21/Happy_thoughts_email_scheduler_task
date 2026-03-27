@@ -1,0 +1,58 @@
+# Python
+
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+*.pyc
+*.pyo
+
+# Virtual environment
+env/
+
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+
+media/
+staticfiles/
+static/
+
+# Django migrations
+*/migrations/*.pyc
+*/migrations/*.py
+*/migrations/__pycache__/
+!*/migrations/__init__.py
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+*.pid
+
+# Pytest
+.pytest_cache/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Environment variables
+.env
